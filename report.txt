@@ -1,0 +1,34 @@
+==================================================
+             SECURITY REPORT
+==================================================
+
+Log File Analyzed      : log.txt
+Total Log Entries      : 7
+Failed Login Attempts  : 6
+Successful Logins      : 1
+Unique IP Addresses    : 3
+Most Attacked User     : admin
+Most Suspicious IP     : 192.168.1.10
+Risk Level             : MEDIUM
+
+Failed Login Count Per IP
+--------------------------------------------------
+Report Generated : 23-07-2026 21:22:03
+192.168.1.10 : 3
+192.168.1.55 : 2
+10.0.0.5 : 1
+
+Security Recommendations
+--------------------------------------------------
+High-Risk IP: 192.168.1.10
+
+Recommended Actions:
+- Block the suspicious IP using a firewall (UFW/iptables).
+- Enable Multi-Factor Authentication (MFA).
+- Review the 'admin' account.
+- Monitor authentication logs regularly.
+- Configure Fail2Ban to block repeated login attempts.
+- Change weak passwords if necessary.
+- Keep Linux packages updated.
+
+==================================================
